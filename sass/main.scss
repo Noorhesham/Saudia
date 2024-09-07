@@ -1,0 +1,37 @@
+@import "tailwindcss/base.css";
+@import "tailwindcss/components.css";
+@import "tailwindcss/utilities.css";
+@import "./components/nav.scss";
+@import "./components/button.scss";
+@import "./components/pagination.scss";
+@font-face {
+    font-family: "Saudia";
+    src: url("./fonts/saudia.ttf") format("truetype"),
+        url("../img/Hacen Saudi Arabia.ttf") format("opentype");
+}
+
+body {
+    font-size: 62.5%;
+    font-family: "Saudia", sans-serif; /* Use your custom font */
+    @apply text-sm;
+}
+button {
+    @apply text-white text-lg;
+}
+h1 {
+    @apply text-5xl mt-8 text-white;
+}
+.max-width-wrapper {
+    max-width: 85rem;
+    @apply w-full mx-auto py-3 px-6;
+}
+.flex-wrapper {
+    @apply flex  items-center;
+}
+.center {
+    transform: translateX(-50%) translateY(-50%);
+    @apply top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+}
+.icon {
+    @apply flex flex-col text-7xl gap-2 text-gray-600 items-center;
+}

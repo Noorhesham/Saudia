@@ -1,0 +1,30 @@
+.nav {
+    @apply top-0  text-white lg:h-20 left-0 z-50 flex justify-between items-center;
+}
+.nav_link {
+    @apply px-5   cursor-pointer  font-medium text-sm;
+}
+.sticky {
+    @apply bg-white duration-150  fixed w-full text-gray-900;
+}
+.menu_item_hover {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: white;
+    height: 300px;
+    width: 80%;
+    transition: all 0.3s ease-in-out;
+
+    @apply rounded-2xl shadow-lg;
+}
+.menu_img {
+    flex-basis: 40%;
+}
+.menu_content {
+    flex-basis: 60%;
+    @apply grid grid-cols-2 px-8 py-4  text-black  pl-2;
+}

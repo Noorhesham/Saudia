@@ -1,0 +1,23 @@
+{
+    "name": "tailwind-sass-starter",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "cross-env NODE_ENV=production postcss sass/main.scss -o css/styles.css --use-cssnano",
+        "start": "postcss sass/main.scss -o css/styles.css --watch"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "autoprefixer": "^10.4.20",
+        "cross-env": "^7.0.3",
+        "cssnano": "^5.1.15",
+        "postcss": "^8.4.45",
+        "postcss-cli": "^8.3.1",
+        "postcss-import": "^14.1.0",
+        "postcss-nested": "^6.2.0",
+        "postcss-nesting": "^8.0.1",
+        "tailwindcss": "^2.2.19"
+    }
+}
