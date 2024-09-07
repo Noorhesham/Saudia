@@ -1,504 +1,488 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="stylesheet" href="css/styles.css" />
-      <title>Tailwind & Sass Starter</title>
-      <script src="./js/index.js"></script>
-      <link
-         rel="stylesheet"
-         href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-      />
-      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Tailwind & Sass Starter</title>
+    <script src="./js/index.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-      <script
-         src="https://kit.fontawesome.com/43296d6011.js"
-         crossorigin="anonymous"
-      ></script>
-   </head>
+    <script
+      src="https://kit.fontawesome.com/43296d6011.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-   <body dir="rtl">
-      <header
-         class="duration-150 z-50 fixed backdrop-blur-lg bg-black bg-opacity-60 w-full"
-      >
-         <nav class="nav relative lg:h-20 max-width-wrapper">
-            <div class="flex items-center">
-               <a class="relative w-20 h-6" href="">
-                  <img
-                     id="logo"
-                     class="absolute object-contain inset-0"
-                     src="img/imagewhite.svg"
-               /></a>
-               <ul class="flex items-center">
-                  <li data-menu="1" class="nav_link menu_item">الوجهات</li>
-                  <li data-menu="2" class="nav_link menu_item">أنشطة سياحية</li>
-                  <li data-menu="3" class="nav_link menu_item">
-                     أساسيات السفر
-                  </li>
-                  <li class="nav_link">تقويم الفاعليات</li>
-                  <li class="nav_link">الخريطة التفاعلية</li>
-               </ul>
+  <body dir="rtl">
+    <header
+      class="duration-150 z-50 fixed backdrop-blur-lg bg-black bg-opacity-60 w-full"
+    >
+      <nav class="nav relative lg:h-20 max-width-wrapper">
+        <div class="flex items-center">
+          <a class="relative w-20 h-6" href="">
+            <img
+              id="logo"
+              class="absolute object-contain inset-0"
+              src="img/imagewhite.svg"
+          /></a>
+          <ul class="flex items-center">
+            <li data-menu="1" class="nav_link menu_item">الوجهات</li>
+            <li data-menu="2" class="nav_link menu_item">أنشطة سياحية</li>
+            <li data-menu="3" class="nav_link menu_item">أساسيات السفر</li>
+            <li class="nav_link">تقويم الفاعليات</li>
+            <li class="nav_link">الخريطة التفاعلية</li>
+          </ul>
+        </div>
+
+        <div class="flex-wrapper flex-row-reverse flex-1 gap-2">
+          <!-- singup btns -->
+
+          <button
+            class="bg-white w-40 signup btn hover:bg-gray-200 text-gray-500 transition-all duration-300"
+          >
+            تسجيل الدخول
+          </button>
+          <button
+            class="bg-white w-32 font-medium nav_link bg-opacity-20 btn transition-all duration-300"
+          >
+            طلب تأشيرة
+          </button>
+          <!-- search and lang -->
+          <button
+            class="bg-opacity-20 btn nav_link bg-white rounded-full gap-2 p-2 text-sm flex items-center justify-center"
+          >
+            <i class="fa-solid fa-globe"></i>
+            <span class="mt-1 text-center text-sm">AR</span>
+          </button>
+          <button
+            class="bg-opacity-20 btn nav_link bg-white rounded-full p-2 h-10 w-10 flex items-center justify-center"
+          >
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main class="h-full">
+      <div class="swiper swiper1 h-screen w-full">
+        <div class="swiper-wrapper">
+          <!-- landing the video slider  -->
+          <div
+            class="swiper-slide relative flex items-center justify-center overflow-hidden medium-cover h-[650px] md:h-screen"
+          >
+            <video
+              loop
+              autoplay
+              muted
+              class="absolute z-0 w-auto min-w-full min-h-full max-w-none"
+              src="img/national-day-vid.mov"
+            >
+              <source src="img/national-day-vid.mov" type="video/mp4" />
+            </video>
+            <div
+              class="center text-white z-20 absolute flex gap-5 flex-col items-center"
+            >
+              <h1 class="text-7xl font-semibold">السعودية ..تراها أجمل</h1>
+              <p class="text-xl">عروض سبتمر واليوم الوطني تنتظرك</p>
+              <button
+                class="py-2 hover:bg-white hover:bg-opacity-40 duration-150 px-8 rounded-xl border-2 border-white"
+              >
+                أعرف أكتر
+              </button>
             </div>
-
-            <div class="flex-wrapper flex-row-reverse flex-1 gap-2">
-               <!-- singup btns -->
-
-               <button
-                  class="bg-white w-40 signup btn hover:bg-gray-200 text-gray-500 transition-all duration-300"
-               >
-                  تسجيل الدخول
-               </button>
-               <button
-                  class="bg-white w-32 font-medium nav_link bg-opacity-20 btn transition-all duration-300"
-               >
-                  طلب تأشيرة
-               </button>
-               <!-- search and lang -->
-               <button
-                  class="bg-opacity-20 btn nav_link bg-white rounded-full gap-2 p-2 text-sm flex items-center justify-center"
-               >
-                  <i class="fa-solid fa-globe"></i>
-                  <span class="mt-1 text-center text-sm">AR</span>
-               </button>
-               <button
-                  class="bg-opacity-20 btn nav_link bg-white rounded-full p-2 h-10 w-10 flex items-center justify-center"
-               >
-                  <i class="fa-solid fa-magnifying-glass"></i>
-               </button>
+          </div>
+          <div class="swiper-slide w-full">
+            <img
+              class="w-full h-full"
+              src="/img/new-banner-saudi-stop-over-visa_crop-1920x1080.webp"
+              alt=""
+            />
+            <div
+              class="center max-width-wrapper text-white z-20 absolute flex gap-5 flex-col items-center"
+            >
+              <h1 class="text-7xl text-center w-full font-semibold">
+                تأشيرة المرور "الترانزيت" السعودية
+              </h1>
+              <p class="text-xl">
+                تقدم للحصول على تأشيرة مرور (ترانزيت) مجانية عند السفر عن طريق
+                "الخطوط السعودية" أو "طيران ناس"، واستكشف معالم السعودية لمدة 96
+                ساعة قبل أو بعد الوصول
+              </p>
+              <button
+                class="py-2 hover:bg-white hover:bg-opacity-40 duration-150 px-8 rounded-xl border-2 border-white"
+              >
+                احجز الان
+              </button>
             </div>
-         </nav>
-      </header>
-      <main class="h-full">
-         <div class="swiper swiper1 h-screen w-full">
+          </div>
+          <div class="swiper-slide w-full">
+            <img
+              class="w-full h-full"
+              src="/img/Visit-Saudi-Banner_crop-1920x1080.webp"
+              alt=""
+            />
+            <div
+              class="center max-width-wrapper text-white z-20 absolute flex gap-5 flex-col items-center"
+            >
+              <h1 class="text-7xl text-center w-full font-semibold">
+                المتعة مع مكافآت السعودية!
+              </h1>
+              <p class="text-xl">
+                برنامج المكافآت الأول من نوعه للسياحة في السعودية يقدم لك نقاط
+                ما لها مثيل! عروض استثنائية! تجارب لا تُنسى! كل هذا وأكثر...
+              </p>
+              <button
+                class="py-2 hover:bg-white hover:bg-opacity-40 duration-150 px-8 rounded-xl border-2 border-white"
+              >
+                اكسب المكافآت
+              </button>
+            </div>
+          </div>
+        </div>
+        <div>سجّل وعيش المتعة مع مكافآت السعودية!</div>
+        <div class="swiper-pagination swiper-pagination-main"></div>
+      </div>
+
+      <!--second slider  فعاليات الشهر الحالي-->
+      <section class="bg-gray-100 py-10">
+        <div class="max-width-wrapper">
+          <div class="flex w-full items-center justify-between">
+            <h1 class="text-5xl text-black font-bold">فعاليات الشهر الحالي</h1>
+            <a class="text-base" style="color: #78006e" href=""> عرض الكل</a>
+          </div>
+
+          <div dir="rtl" class="swiper mySwiper swiper2 mt-8 py-5">
             <div class="swiper-wrapper">
-               <!-- landing the video slider  -->
-               <div
-                  class="swiper-slide relative flex items-center justify-center overflow-hidden medium-cover h-[650px] md:h-screen"
-               >
-                  <video
-                     loop
-                     autoplay
-                     muted
-                     class="absolute z-0 w-auto min-w-full min-h-full max-w-none"
-                     src="img/national-day-vid.mov"
-                  >
-                     <source src="img/national-day-vid.mov" type="video/mp4" />
-                  </video>
-                  <div
-                     class="center text-white z-20 absolute flex gap-5 flex-col items-center"
-                  >
-                     <h1 class="text-7xl font-semibold">
-                        السعودية ..تراها أجمل
-                     </h1>
-                     <p class="text-xl">عروض سبتمر واليوم الوطني تنتظرك</p>
-                     <button
-                        class="py-2 hover:bg-white hover:bg-opacity-40 duration-150 px-8 rounded-xl border-2 border-white"
-                     >
-                        أعرف أكتر
-                     </button>
+              <!-- slide card -->
+              <div class="swiper-slide">
+                <!-- image with the duration -->
+                <div class="big_slide_img">
+                  <div class="time">
+                    <p class="text-sm border-b border-white">
+                      <span class="text-2xl">15</span>
+                      أغسطس 2024
+                    </p>
+                    <p class="text-sm mt-2">
+                      <span class="text-2xl">15</span>
+                      أغسطس 2024
+                    </p>
                   </div>
-               </div>
-               <div class="swiper-slide w-full">
+
                   <img
-                     class="w-full h-full"
-                     src="/img/new-banner-saudi-stop-over-visa_crop-1920x1080.webp"
-                     alt=""
+                    src="./img/slide1.webp"
+                    class="inset-0 object-cover absolute w-full h-full"
                   />
-                  <div
-                     class="center max-width-wrapper text-white z-20 absolute flex gap-5 flex-col items-center"
-                  >
-                     <h1 class="text-7xl text-center w-full font-semibold">
-                        تأشيرة المرور "الترانزيت" السعودية
-                     </h1>
-                     <p class="text-xl">
-                        تقدم للحصول على تأشيرة مرور (ترانزيت) مجانية عند السفر
-                        عن طريق "الخطوط السعودية" أو "طيران ناس"، واستكشف معالم
-                        السعودية لمدة 96 ساعة قبل أو بعد الوصول
-                     </p>
-                     <button
-                        class="py-2 hover:bg-white hover:bg-opacity-40 duration-150 px-8 rounded-xl border-2 border-white"
-                     >
-                        احجز الان
-                     </button>
+                </div>
+                <!-- title -->
+                <div class="flex flex-col gap-2">
+                  <div class="flex mt-2 items-center gap-2 font-semibold">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="text-black text-sm">عسير</p>
+                    <p class="text-black text-sm">| موقع الطبيعة</p>
                   </div>
-               </div>
-               <div class="swiper-slide w-full">
+                  <h4 class="font-semibold text-base">برندة</h4>
+                  <a
+                    class="mr-auto bg-main py-2 px-4 rounded-lg text-gray-50 self-end"
+                    >زيارة الموقع الالكتروني</a
+                  >
+                </div>
+              </div>
+              <!--slide end-->
+              <!-- slide card -->
+              <div class="swiper-slide">
+                <!-- image with the duration -->
+                <div class="big_slide_img">
+                  <div class="time">
+                    <p class="text-sm border-b border-white">
+                      <span class="text-2xl">15</span>
+                      أغسطس 2024
+                    </p>
+                    <p class="text-sm mt-2">
+                      <span class="text-2xl">15</span>
+                      أغسطس 2024
+                    </p>
+                  </div>
+
                   <img
-                     class="w-full h-full"
-                     src="/img/Visit-Saudi-Banner_crop-1920x1080.webp"
-                     alt=""
+                    src="./img/slide2.webp"
+                    class="inset-0 object-cover absolute w-full h-full"
                   />
-                  <div
-                     class="center max-width-wrapper text-white z-20 absolute flex gap-5 flex-col items-center"
+                </div>
+                <!-- title -->
+                <div class="flex flex-col gap-2">
+                  <div class="flex mt-2 items-center gap-2 font-semibold">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="text-black text-sm">عسير</p>
+                    <p class="text-black text-sm">| موقع الطبيعة</p>
+                  </div>
+                  <h4 class="font-semibold text-base">برندة</h4>
+                  <a
+                    class="mr-auto bg-main py-2 px-4 rounded-lg text-gray-50 self-end"
+                    >زيارة الموقع الالكتروني</a
                   >
-                     <h1 class="text-7xl text-center w-full font-semibold">
-                        المتعة مع مكافآت السعودية!
-                     </h1>
-                     <p class="text-xl">
-                        برنامج المكافآت الأول من نوعه للسياحة في السعودية يقدم
-                        لك نقاط ما لها مثيل! عروض استثنائية! تجارب لا تُنسى! كل
-                        هذا وأكثر...
-                     </p>
-                     <button
-                        class="py-2 hover:bg-white hover:bg-opacity-40 duration-150 px-8 rounded-xl border-2 border-white"
-                     >
-                        اكسب المكافآت
-                     </button>
+                </div>
+              </div>
+              <!--slide end-->
+              <!-- slide card -->
+              <div class="swiper-slide">
+                <!-- image with the duration -->
+                <div class="big_slide_img">
+                  <div class="time">
+                    <p class="text-sm border-b border-white">
+                      <span class="text-2xl">15</span>
+                      أغسطس 2024
+                    </p>
+                    <p class="text-sm mt-2">
+                      <span class="text-2xl">15</span>
+                      أغسطس 2024
+                    </p>
                   </div>
-               </div>
-            </div>
-            <div>سجّل وعيش المتعة مع مكافآت السعودية!</div>
-            <div class="swiper-pagination swiper-pagination-main"></div>
-         </div>
 
-         <!--second slider  فعاليات الشهر الحالي-->
-         <section class="bg-gray-100 py-10">
-            <div class="max-width-wrapper">
-               <div class="flex w-full items-center justify-between">
-                  <h1 class="text-5xl text-black font-bold">
-                     فعاليات الشهر الحالي
-                  </h1>
-                  <a class="text-base" style="color: #78006e" href="">
-                     عرض الكل</a
+                  <img
+                    src="./img/slide3.webp"
+                    class="inset-0 object-cover absolute w-full h-full"
+                  />
+                </div>
+                <!-- title -->
+                <div class="flex flex-col gap-2">
+                  <div class="flex mt-2 items-center gap-2 font-semibold">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="text-black text-sm">عسير</p>
+                    <p class="text-black text-sm">| موقع الطبيعة</p>
+                  </div>
+                  <h4 class="font-semibold text-base">برندة</h4>
+                  <a
+                    class="mr-auto bg-main py-2 px-4 rounded-lg text-gray-50 self-end"
+                    >زيارة الموقع الالكتروني</a
                   >
-               </div>
-
-               <div dir="rtl" class="swiper mySwiper swiper2 mt-8 py-5">
-                  <div class="swiper-wrapper">
-                     <!-- slide card -->
-                     <div class="swiper-slide">
-                        <!-- image with the duration -->
-                        <div
-                           class="w-full h-96 rounded-xl overflow-hidden relative"
-                        >
-                           <div
-                              class="flex text-white w-16 py-5 z-20 text-center text-sm rounded-bl-xl items-center bg-black bg-opacity-50 absolute top-0 right-0 flex-col"
-                           >
-                              <p class="text-sm border-b border-white">
-                                 <span class="text-2xl">15</span>
-                                 أغسطس 2024
-                              </p>
-                              <p class="text-sm mt-2">
-                                 <span class="text-2xl">15</span>
-                                 أغسطس 2024
-                              </p>
-                           </div>
-
-                           <img
-                              src="./img/slide1.webp"
-                              class="inset-0 object-cover absolute w-full h-full"
-                           />
-                        </div>
-                        <!-- title -->
-                        <div class="flex flex-col gap-2">
-                           <div
-                              class="flex mt-2 items-center gap-2 font-semibold"
-                           >
-                              <i class="fa-solid fa-location-dot"></i>
-                              <p class="text-black text-sm">عسير</p>
-                              <p class="text-black text-sm">| موقع الطبيعة</p>
-                           </div>
-                           <h4 class="font-semibold text-base">برندة</h4>
-                           <a
-                              class="mr-auto bg-main py-2 px-4 rounded-lg text-gray-50 self-end"
-                              >زيارة الموقع الالكتروني</a
-                           >
-                        </div>
-                     </div>
-                     <!--slide end-->
-                     <!-- slide card -->
-                     <div class="swiper-slide">
-                        <!-- image with the duration -->
-                        <div
-                           class="w-full h-96 rounded-xl overflow-hidden relative"
-                        >
-                           <div
-                              class="flex text-white w-16 py-5 z-20 text-center text-sm rounded-bl-xl items-center bg-black bg-opacity-50 absolute top-0 right-0 flex-col"
-                           >
-                              <p class="text-sm border-b border-white">
-                                 <span class="text-2xl">15</span>
-                                 أغسطس 2024
-                              </p>
-                              <p class="text-sm mt-2">
-                                 <span class="text-2xl">15</span>
-                                 أغسطس 2024
-                              </p>
-                           </div>
-
-                           <img
-                              src="./img/slide2.webp"
-                              class="inset-0 object-cover absolute w-full h-full"
-                           />
-                        </div>
-                        <!-- title -->
-                        <div class="flex flex-col gap-2">
-                           <div
-                              class="flex mt-2 items-center gap-2 font-semibold"
-                           >
-                              <i class="fa-solid fa-location-dot"></i>
-                              <p class="text-black text-sm">عسير</p>
-                              <p class="text-black text-sm">| موقع الطبيعة</p>
-                           </div>
-                           <h4 class="font-semibold text-base">برندة</h4>
-                           <a
-                              class="mr-auto bg-main py-2 px-4 rounded-lg text-gray-50 self-end"
-                              >زيارة الموقع الالكتروني</a
-                           >
-                        </div>
-                     </div>
-                     <!--slide end-->
-                     <!-- slide card -->
-                     <div class="swiper-slide">
-                        <!-- image with the duration -->
-                        <div
-                           class="w-full h-96 rounded-xl overflow-hidden relative"
-                        >
-                           <div
-                              class="flex text-white w-16 py-5 z-20 text-center text-sm rounded-bl-xl items-center bg-black bg-opacity-50 absolute top-0 right-0 flex-col"
-                           >
-                              <p class="text-sm border-b border-white">
-                                 <span class="text-2xl">15</span>
-                                 أغسطس 2024
-                              </p>
-                              <p class="text-sm mt-2">
-                                 <span class="text-2xl">15</span>
-                                 أغسطس 2024
-                              </p>
-                           </div>
-
-                           <img
-                              src="./img/slide3.webp"
-                              class="inset-0 object-cover absolute w-full h-full"
-                           />
-                        </div>
-                        <!-- title -->
-                        <div class="flex flex-col gap-2">
-                           <div
-                              class="flex mt-2 items-center gap-2 font-semibold"
-                           >
-                              <i class="fa-solid fa-location-dot"></i>
-                              <p class="text-black text-sm">عسير</p>
-                              <p class="text-black text-sm">| موقع الطبيعة</p>
-                           </div>
-                           <h4 class="font-semibold text-base">برندة</h4>
-                           <a
-                              class="mr-auto bg-main py-2 px-4 rounded-lg text-gray-50 self-end"
-                              >زيارة الموقع الالكتروني</a
-                           >
-                        </div>
-                     </div>
-                     <!--slide end-->
-                     <!-- slide card -->
-                     <div class="swiper-slide">
-                        <!-- image with the duration -->
-                        <div
-                           class="w-full h-96 rounded-xl overflow-hidden relative"
-                        >
-                           <div
-                              class="flex text-white w-16 py-5 z-20 text-center text-sm rounded-bl-xl items-center bg-black bg-opacity-50 absolute top-0 right-0 flex-col"
-                           >
-                              <p class="text-sm border-b border-white">
-                                 <span class="text-2xl">15</span>
-                                 أغسطس 2024
-                              </p>
-                              <p class="text-sm mt-2">
-                                 <span class="text-2xl">15</span>
-                                 أغسطس 2024
-                              </p>
-                           </div>
-
-                           <img
-                              src="./img/slide4.webp"
-                              class="inset-0 object-cover absolute w-full h-full"
-                           />
-                        </div>
-                        <!-- title -->
-                        <div class="flex flex-col gap-2">
-                           <div
-                              class="flex mt-2 items-center gap-2 font-semibold"
-                           >
-                              <i class="fa-solid fa-location-dot"></i>
-                              <p class="text-black text-sm">عسير</p>
-                              <p class="text-black text-sm">| موقع الطبيعة</p>
-                           </div>
-                           <h4 class="font-semibold text-base">برندة</h4>
-                           <a
-                              class="mr-auto bg-main py-2 px-4 rounded-lg text-gray-50 self-end"
-                              >زيارة الموقع الالكتروني</a
-                           >
-                        </div>
-                     </div>
-                     <!--slide end-->
+                </div>
+              </div>
+              <!--slide end-->
+              <!-- slide card -->
+              <div class="swiper-slide">
+                <!-- image with the duration -->
+                <div class="big_slide_img">
+                  <div class="time">
+                    <p class="text-sm border-b border-white">
+                      <span class="text-2xl">15</span>
+                      أغسطس 2024
+                    </p>
+                    <p class="text-sm mt-2">
+                      <span class="text-2xl">15</span>
+                      أغسطس 2024
+                    </p>
                   </div>
-                  <div
-                     class="swiper-button-next text-3xl rounded-full bg-white"
+
+                  <img
+                    src="./img/slide4.webp"
+                    class="inset-0 object-cover absolute w-full h-full"
+                  />
+                </div>
+                <!-- title -->
+                <div class="flex flex-col gap-2">
+                  <div class="flex mt-2 items-center gap-2 font-semibold">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="text-black text-sm">عسير</p>
+                    <p class="text-black text-sm">| موقع الطبيعة</p>
+                  </div>
+                  <h4 class="font-semibold text-base">برندة</h4>
+                  <a
+                    class="mr-auto bg-main py-2 px-4 rounded-lg text-gray-50 self-end"
+                    >زيارة الموقع الالكتروني</a
                   >
-                     <i class="fa-solid fa-arrow-left"></i>
-                  </div>
-                  <div
-                     class="swiper-button-prev text-3xl rounded-full bg-white"
-                  >
-                     <i class="fa-solid fa-arrow-right"></i>
-                  </div>
-               </div>
+                </div>
+              </div>
+              <!--slide end-->
             </div>
-         </section>
-         <section>
-            <div class="max-width-wrapper">
-               <div class="flex flex-col w-full items-center justify-between">
-                  <h1 class="text-5xl text-black font-bold self-start">
-                     أبرز الأنشطة
-                  </h1>
-                  <div class="flex text-xl my-10 items-center gap-14">
-                     <div class="icon">
-                        <i class="fa-solid fa-check"></i>
-                        <h2 class="text-base">الكل</h2>
-                     </div>
-                     <div class="icon">
-                        <i class="fa-solid fa-leaf"></i>
-                        <h2 class="text-base">طبيعة</h2>
-                     </div>
-                     <div class="icon">
-                        <i class="fa-solid fa-landmark"></i>
-                        <h2 class="text-base">الثقافة والتاريخ</h2>
-                     </div>
-                     <div class="icon">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <h2 class="text-base">التسوق</h2>
-                     </div>
-                     <div class="icon">
-                        <i class="fa-solid fa-utensils"></i>
-                        <h2 class="text-base">المأكولات والمشروبات</h2>
-                     </div>
-                  </div>
-               </div>
+            <div class="swiper-button-next text-3xl rounded-full bg-white">
+              <i class="fa-solid fa-arrow-left"></i>
             </div>
+            <div class="swiper-button-prev text-3xl rounded-full bg-white">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="max-width-wrapper">
+          <div class="flex flex-col w-full items-center justify-between">
+            <h1 class="text-5xl text-black font-bold self-start">
+              أبرز الأنشطة
+            </h1>
+            <div class="flex text-xl my-10 items-center gap-14">
+              <div data-tab="1" class="icon tab_item">
+                <i class="fa-solid fa-check"></i>
+                <h2 class="text-base">الكل</h2>
+              </div>
+              <div data-tab="2" class="icon tab_item">
+                <i class="fa-solid fa-leaf"></i>
+                <h2 class="text-base">طبيعة</h2>
+              </div>
+              <div data-tab="3" class="icon tab_item">
+                <i class="fa-solid fa-landmark"></i>
+                <h2 class="text-base">الثقافة والتاريخ</h2>
+              </div>
+              <div data-tab="4" class="icon tab_item">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <h2 class="text-base">التسوق</h2>
+              </div>
+              <div data-tab="5" class="icon tab_item">
+                <i class="fa-solid fa-utensils"></i>
+                <h2 class="text-base">المأكولات والمشروبات</h2>
+              </div>
+            </div>
+          </div>
+        </div>
 
-            <!-- slider section أبرز الأنشطة + tabs -->
-            <div class="max-width-wrapper" data-slideSection="1">
-               <div
-                  dir="rtl"
-                  class="swiper mySwiper relative swiper3 mt-8 py-5"
-               >
-                  <div class="swiper-wrapper">
-                     <div class="swiper-slide">
-                        <!-- image with the duration -->
-                        <div
-                           class="w-full h-96 rounded-xl overflow-hidden relative"
-                        >
-                           <img
-                              src="./img/slidebig1.webp"
-                              class="inset-0 object-cover absolute w-full h-full"
-                           />
-                        </div>
-                        <!-- title -->
-                        <div class="flex flex-col gap-2">
-                           <div
-                              class="flex mt-2 items-center gap-2 font-semibold"
-                           >
-                              <i class="fa-solid fa-location-dot"></i>
-                              <p class="text-black text-sm">عسير</p>
-                              <p class="text-black text-sm">| موقع الطبيعة</p>
-                           </div>
-                           <h4 class="font-semibold text-base">برندة</h4>
-                           <a
-                              class="mr-auto bg-main py-2 px-4 rounded-lg text-gray-50 self-end"
-                              >زيارة الموقع الالكتروني</a
-                           >
-                        </div>
-                     </div>
-                     <!--slide end-->
-                     <div class="swiper-slide">
-                        <!-- image with the duration -->
-                        <div
-                           class="w-full h-96 rounded-xl overflow-hidden relative"
-                        >
-                           <img
-                              src="./img/slidebig1.webp"
-                              class="inset-0 object-cover absolute w-full h-full"
-                           />
-                        </div>
-                        <!-- title -->
-                        <div class="flex flex-col gap-2">
-                           <div
-                              class="flex mt-2 items-center gap-2 font-semibold"
-                           >
-                              <i class="fa-solid fa-location-dot"></i>
-                              <p class="text-black text-sm">عسير</p>
-                              <p class="text-black text-sm">| موقع الطبيعة</p>
-                           </div>
-                           <h4 class="font-semibold text-base">برندة</h4>
-                           <a
-                              class="mr-auto bg-main py-2 px-4 rounded-lg text-gray-50 self-end"
-                              >زيارة الموقع الالكتروني</a
-                           >
-                        </div>
-                     </div>
-                     <!--slide end-->
-                     <div class="swiper-slide">
-                        <!-- image with the duration -->
-                        <div
-                           class="w-full h-96 rounded-xl overflow-hidden relative"
-                        >
-                           <img
-                              src="./img/slidebig1.webp"
-                              class="inset-0 object-cover absolute w-full h-full"
-                           />
-                        </div>
-                        <!-- title -->
-                        <div class="flex flex-col gap-2">
-                           <div
-                              class="flex mt-2 items-center gap-2 font-semibold"
-                           >
-                              <i class="fa-solid fa-location-dot"></i>
-                              <p class="text-black text-sm">عسير</p>
-                              <p class="text-black text-sm">| موقع الطبيعة</p>
-                           </div>
-                           <h4 class="font-semibold text-base">برندة</h4>
-                           <a
-                              class="mr-auto bg-main py-2 px-4 rounded-lg text-gray-50 self-end"
-                              >زيارة الموقع الالكتروني</a
-                           >
-                        </div>
-                     </div>
-                     <!--slide end-->
+        <!-- slider section أبرز الأنشطة + tabs -->
+        <div style="min-height: 80vh" class="max-width-wrapper">
+          <div class="max-width-wrapper tab-content" data-slideSection="1">
+            <div dir="rtl" class="swiper mySwiper relative swiper3 mt-8 py-5">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <!-- image with the duration -->
+                  <div class="big_slide_img">
+                    <img
+                      src="./img/sliderbig3.webp"
+                      class="inset-0 object-cover absolute w-full h-full"
+                    />
                   </div>
+                  <!-- title -->
+                  <div class="flex flex-col gap-2">
+                    <div class="flex mt-2 items-center gap-2 font-semibold">
+                      <i class="fa-solid fa-location-dot"></i>
+                      <p class="text-black text-sm">عسير</p>
+                      <p class="text-black text-sm">| موقع الطبيعة</p>
+                    </div>
+                    <h4 class="font-semibold text-base">برندة</h4>
+                    <a
+                      class="mr-auto bg-main py-2 px-4 rounded-lg text-gray-50 self-end"
+                      >زيارة الموقع الالكتروني</a
+                    >
+                  </div>
+                </div>
+                <!--slide end-->
+                <div class="swiper-slide">
+                  <!-- image with the duration -->
+                  <div class="big_slide_img">
+                    <img
+                      src="./img/sliderbig2.webp"
+                      class="inset-0 object-cover absolute w-full h-full"
+                    />
+                  </div>
+                  <!-- title -->
+                  <div class="flex flex-col gap-2">
+                    <div class="flex mt-2 items-center gap-2 font-semibold">
+                      <i class="fa-solid fa-location-dot"></i>
+                      <p class="text-black text-sm">عسير</p>
+                      <p class="text-black text-sm">| موقع الطبيعة</p>
+                    </div>
+                    <h4 class="font-semibold text-base">برندة</h4>
+                    <a
+                      class="mr-auto bg-main py-2 px-4 rounded-lg text-gray-50 self-end"
+                      >زيارة الموقع الالكتروني</a
+                    >
+                  </div>
+                </div>
+                <!--slide end-->
+                <div class="swiper-slide">
+                  <!-- image with the duration -->
+                  <div class="big_slide_img">
+                    <img
+                      src="./img/sliderbig3.webp"
+                      class="inset-0 object-cover absolute w-full h-full"
+                    />
+                  </div>
+                  <!-- title -->
+                  <div class="flex flex-col gap-2">
+                    <div class="flex mt-2 items-center gap-2 font-semibold">
+                      <i class="fa-solid fa-location-dot"></i>
+                      <p class="text-black text-sm">عسير</p>
+                      <p class="text-black text-sm">| موقع الطبيعة</p>
+                    </div>
+                    <h4 class="font-semibold text-base">برندة</h4>
+                    <a
+                      class="mr-auto bg-main py-2 px-4 rounded-lg text-gray-50 self-end"
+                      >زيارة الموقع الالكتروني</a
+                    >
+                  </div>
+                </div>
+                <!--slide end-->
+              </div>
 
-                  <div
-                     class="swiper-button-next2 text-3xl rounded-full bg-white"
-                  >
-                     <i class="fa-solid fa-arrow-left"></i>
+              <div
+                class="swiper-button-next swiper-button-next2 text-3xl rounded-full bg-white"
+              >
+                <i class="fa-solid fa-arrow-left"></i>
+              </div>
+              <div
+                class="swiper-button-prev swiper-button-prev2 text-3xl rounded-full bg-white"
+              >
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+          <div class="tab-content" data-slideSection="2">
+            <div dir="rtl" class="swiper mySwiper swiper3 mt-8 py-5">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <!-- image with the duration -->
+                  <div class="big_slide_img">
+                    <img
+                      src="./img/sliderbig3.webp"
+                      class="inset-0 object-cover absolute w-full h-full"
+                    />
                   </div>
-                  <div
-                     class="swiper-button-prev2 text-3xl rounded-full bg-white"
-                  >
-                     <i class="fa-solid fa-arrow-right"></i>
+                  <!-- title -->
+                  <div class="flex flex-col gap-2">
+                    <div class="flex mt-2 items-center gap-2 font-semibold">
+                      <i class="fa-solid fa-location-dot"></i>
+                      <p class="text-black text-sm">عسير</p>
+                      <p class="text-black text-sm">| موقع الطبيعة</p>
+                    </div>
+                    <h4 class="font-semibold text-base">برندة</h4>
+                    <a
+                      class="mr-auto bg-main py-2 px-4 rounded-lg text-gray-50 self-end"
+                      >زيارة الموقع الالكتروني</a
+                    >
                   </div>
-               </div>
+                </div>
+                <!--slide end-->
+              </div>
+              <div
+                class="swiper-button-next swiper-button-next2 text-3xl rounded-full bg-white"
+              >
+                <i class="fa-solid fa-arrow-left"></i>
+              </div>
+              <div
+                class="swiper-button-prev swiper-button-prev2 text-3xl rounded-full bg-white"
+              >
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
             </div>
-            <div data-slideSection="2">
-               <div dir="rtl" class="swiper mySwiper swiper3 mt-8 py-5">
-                  <div class="swiper-wrapper"></div>
-               </div>
+          </div>
+          <div class="tab-content" data-slideSection="3">
+            <div dir="rtl" class="swiper mySwiper swiper3 mt-8 py-5">
+              <div class="swiper-wrapper"></div>
             </div>
-            <div data-slideSection="3">
-               <div dir="rtl" class="swiper mySwiper swiper3 mt-8 py-5">
-                  <div class="swiper-wrapper"></div>
-               </div>
+          </div>
+          <div class="tab-content" data-slideSection="4">
+            <div dir="rtl" class="swiper mySwiper swiper3 mt-8 py-5">
+              <div class="swiper-wrapper"></div>
             </div>
-            <div data-slideSection="4">
-               <div dir="rtl" class="swiper mySwiper swiper3 mt-8 py-5">
-                  <div class="swiper-wrapper"></div>
-               </div>
+          </div>
+          <div class="tab-content" data-slideSection="5">
+            <div dir="rtl" class="swiper mySwiper swiper3 mt-8 py-5">
+              <div class="swiper-wrapper"></div>
             </div>
-            <div data-slideSection="5">
-               <div dir="rtl" class="swiper mySwiper swiper3 mt-8 py-5">
-                  <div class="swiper-wrapper"></div>
-               </div>
-            </div>
-         </section>
-      </main>
-   </body>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

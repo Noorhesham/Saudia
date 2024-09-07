@@ -31215,11 +31215,41 @@ video {
   height: 3rem !important;
 }
 
+.big_slide_img {
+  position: relative;
+  height: 24rem;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 0.75rem;
+}
+
+.time {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 20;
+  display: flex;
+  width: 4rem;
+  flex-direction: column;
+  align-items: center;
+  border-bottom-left-radius: 0.75rem;
+  --tw-bg-opacity: 1;
+  background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.5;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
 @font-face {
   font-family: "Saudia";
 
   src: url("./fonts/saudia.ttf") format("truetype"),
-        url("../img/Hacen Saudi Arabia.ttf") format("opentype");
+    url("../img/Hacen Saudi Arabia.ttf") format("opentype");
 }
 
 body {
@@ -31270,6 +31300,7 @@ h1 {
 
 .icon {
   display: flex;
+  cursor: pointer;
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
@@ -31277,6 +31308,16 @@ h1 {
   line-height: 1;
   --tw-text-opacity: 1;
   color: rgba(75, 85, 99, var(--tw-text-opacity));
+}
+
+.active {
+  --tw-text-opacity: 1;
+  color: rgba(120, 0, 110, var(--tw-text-opacity));
+}
+
+.tab-content, .tab_item {
+  transition-duration: 150ms;
+  transition-timing-function: linear;
 }
 
 @media (min-width: 640px) {
