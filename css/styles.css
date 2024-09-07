@@ -31245,6 +31245,27 @@ video {
   color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
+#google-map {
+  width: 100%;
+  height: 500px;
+  align-self: center;
+  flex-basis: 70%;
+}
+
+.scrollY {
+  overflow-y: scroll;
+  max-height: 500px;
+  flex-basis: 30%;
+}
+
+.scrollY::-webkit-scrollbar {
+    display: none;
+  }
+
+.card-hover:hover {
+    transform: scale(1.2);
+  }
+
 @font-face {
   font-family: "Saudia";
 
@@ -31313,6 +31334,11 @@ h1 {
 .active {
   --tw-text-opacity: 1;
   color: rgba(120, 0, 110, var(--tw-text-opacity));
+}
+
+.tab-content,
+.tab_item {
+  max-width: 85rem;
 }
 
 .tab-content, .tab_item {

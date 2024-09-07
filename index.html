@@ -12,6 +12,10 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnp2411Gi_7HfAdUr6EgM_d46iRfrwKYY&callback=initMap"
+    ></script>
 
     <script
       src="https://kit.fontawesome.com/43296d6011.js"
@@ -68,7 +72,7 @@
         </div>
       </nav>
     </header>
-    <main class="h-full">
+    <main class="bg-gray-100 h-full">
       <div class="swiper swiper1 h-screen w-full">
         <div class="swiper-wrapper">
           <!-- landing the video slider  -->
@@ -340,7 +344,7 @@
         </div>
 
         <!-- slider section أبرز الأنشطة + tabs -->
-        <div style="min-height: 80vh" class="max-width-wrapper">
+        <div style="min-height: 500px" class="max-width-wrapper">
           <div class="max-width-wrapper tab-content" data-slideSection="1">
             <div dir="rtl" class="swiper mySwiper relative swiper3 mt-8 py-5">
               <div class="swiper-wrapper">
@@ -483,6 +487,259 @@
           </div>
         </div>
       </section>
+      <section class="max-width-wrapper">
+        <h1 class="text-5xl text-black font-bold self-start">
+          تعرف على الوجهات
+        </h1>
+        <div style="max-height: 500px" class="flex mt-10 items-start gap-5">
+          <!-- Images scroll y overflow next to map -->
+          <div
+            style="height: 500px"
+            class="flex flex-col items-start overflow-y-scroll gap-4 no-scrollbar"
+          >
+            <a href="#" class="bg-white rounded-2xl w-full">
+              <div class="w-full rounded-2xl px-1 overflow-hidden">
+                <img
+                  class="w-full rounded-2xl h-full object-cover"
+                  src="./img/scroll1.webp"
+                  alt=""
+                />
+              </div>
+              <div class="flex rounded-2xl py-4 px-2 flex-col">
+                <div
+                  class="flex justify-between items-center rounded-xl gap-2 mt-1"
+                >
+                  <h3 class="font-semibold">أماكن تراثيه ومواقع ...</h3>
+                  <span class="flex items-center gap-1">
+                    38.1°<i class="fa-solid fa-cloud"></i>
+                  </span>
+                </div>
+                <h3 class="text-xl font-semibold">الرياض</h3>
+              </div>
+            </a>
+            <a href="#" class="bg-white rounded-2xl w-full">
+              <div class="w-full rounded-2xl px-1 overflow-hidden">
+                <img
+                  class="w-full rounded-2xl h-full object-cover"
+                  src="./img/scroll1.webp"
+                  alt=""
+                />
+              </div>
+              <div class="flex rounded-2xl py-4 px-2 flex-col">
+                <div
+                  class="flex justify-between items-center rounded-xl gap-2 mt-1"
+                >
+                  <h3 class="font-semibold">أماكن تراثيه ومواقع ...</h3>
+                  <span class="flex items-center gap-1">
+                    38.1°<i class="fa-solid fa-cloud"></i>
+                  </span>
+                </div>
+                <h3 class="text-xl font-semibold">الرياض</h3>
+              </div>
+            </a>
+            <a href="#" class="bg-white rounded-2xl w-full">
+              <div class="w-full rounded-2xl px-1 overflow-hidden">
+                <img
+                  class="w-full rounded-2xl h-full object-cover"
+                  src="./img/scroll1.webp"
+                  alt=""
+                />
+              </div>
+              <div class="flex rounded-2xl py-4 px-2 flex-col">
+                <div
+                  class="flex justify-between items-center rounded-xl gap-2 mt-1"
+                >
+                  <h3 class="font-semibold">أماكن تراثيه ومواقع ...</h3>
+                  <span class="flex items-center gap-1">
+                    38.1°<i class="fa-solid fa-cloud"></i>
+                  </span>
+                </div>
+                <h3 class="text-xl font-semibold">الرياض</h3>
+              </div>
+            </a>
+            <a href="#" class="bg-white rounded-2xl w-full">
+              <div class="w-full rounded-2xl px-1 overflow-hidden">
+                <img
+                  class="w-full rounded-2xl h-full object-cover"
+                  src="./img/scroll1.webp"
+                  alt=""
+                />
+              </div>
+              <div class="flex rounded-2xl py-4 px-2 flex-col">
+                <div
+                  class="flex justify-between items-center rounded-xl gap-2 mt-1"
+                >
+                  <h3 class="font-semibold">أماكن تراثيه ومواقع ...</h3>
+                  <span class="flex items-center gap-1">
+                    38.1°<i class="fa-solid fa-cloud"></i>
+                  </span>
+                </div>
+                <h3 class="text-xl font-semibold">الرياض</h3>
+              </div>
+            </a>
+            <a href="#" class="bg-white rounded-2xl w-full">
+              <div class="w-full rounded-2xl px-1 overflow-hidden">
+                <img
+                  class="w-full rounded-2xl h-full object-cover"
+                  src="./img/scroll1.webp"
+                  alt=""
+                />
+              </div>
+              <div class="flex rounded-2xl py-4 px-2 flex-col">
+                <div
+                  class="flex justify-between items-center rounded-xl gap-2 mt-1"
+                >
+                  <h3 class="font-semibold">أماكن تراثيه ومواقع ...</h3>
+                  <span class="flex items-center gap-1">
+                    38.1°<i class="fa-solid fa-cloud"></i>
+                  </span>
+                </div>
+                <h3 class="text-xl font-semibold">الرياض</h3>
+              </div>
+            </a>
+
+            <!-- Add more items as needed -->
+          </div>
+
+          <!-- Map -->
+          <div id="google-map"></div>
+        </div>
+      </section>
+      <section class="max-width-wrapper">
+        <h1 class="text-5xl text-black font-bold self-start">قصص ومعلومات</h1>
+        <div
+          class="grid mt-10 rounded-xl overflow-hidden grid-cols-3 place-self-center"
+        >
+          <div
+            class="w-full overflow-hidden cursor-pointer hover:opacity-90 hover:scale-110 duration-150 h-full"
+          >
+            <img class="card-hover duration-150" src="./img/h1.webp" alt="" />
+          </div>
+          <div
+            class="w-full relative cursor-pointer overflow-hidden hover:opacity-90 group duration-150 h-full"
+          >
+            <img class="card-hover duration-150" src="./img/h2.webp" alt="" />
+            <div
+              class="flex flex-col py-5 px-10 text-white z-20 right-0 backdrop-blur-md bg-black bg-opacity-60 w-full bottom-0 absolute"
+            >
+              <h3 class="pb-4 border-b border-gray-100">
+                مواقع طبيعية و مغامرة
+              </h3>
+              <h2 class="pt-5">اكتشف العجائب في الكهوف البحريه بالسعويدة</h2>
+            </div>
+          </div>
+          <div
+            class="w-full overflow-hidden cursor-pointer hover:opacity-90 hover:scale-110 duration-150 h-full"
+          >
+            <img class="card-hover duration-150" src="./img/h3.webp" alt="" />
+          </div>
+        </div>
+      </section>
+      <div
+        style="
+          background-image: url('./img/arts3.png');
+          background-position: right;
+          background-size: contain;
+          background-repeat: no-repeat;
+        "
+        class="bg-white mt-10"
+      >
+        <section class="max-width-wrapper">
+          <h1 class="text-5xl text-black font-bold self-start">
+            دليلك لاكتشاف المملكة
+          </h1>
+          <div class="grid grid-cols-4 mt-10 py-10 gap-5">
+            <div>
+              <div class="w-full h-64 relative">
+                <img
+                  class="object-cover absolute w-full h-full inset-0"
+                  src="./img/d1.webp"
+                  alt=""
+                />
+              </div>
+              <div class="text-center mt-4 flex flex-col items-center">
+                <h2 class="font-semibold text-base">متطلبات تأشيرة الدخول</h2>
+                <a class="text-main" href="">اعرف اكتر</a>
+              </div>
+            </div>
+            <div>
+              <div class="w-full h-64 relative">
+                <img
+                  class="object-cover absolute w-full h-full inset-0"
+                  src="./img/d2.webp"
+                  alt=""
+                />
+              </div>
+              <div class="text-center mt-4 flex flex-col items-center">
+                <h2 class="font-semibold text-base">متطلبات تأشيرة الدخول</h2>
+                <a class="text-main" href="">اعرف اكتر</a>
+              </div>
+            </div>
+            <div>
+              <div class="w-full h-64 relative">
+                <img
+                  class="object-cover absolute w-full h-full inset-0"
+                  src="./img/d4.webp"
+                  alt=""
+                />
+              </div>
+              <div class="text-center mt-4 flex flex-col items-center">
+                <h2 class="font-semibold text-base">متطلبات تأشيرة الدخول</h2>
+                <a class="text-main" href="">اعرف اكتر</a>
+              </div>
+            </div>
+            <div class="">
+              <div class="w-full h-64 relative">
+                <img
+                  class="object-cover absolute w-full h-full inset-0"
+                  src="./img/d3.webp"
+                  alt=""
+                />
+              </div>
+              <div class="text-center mt-4 flex flex-col items-center">
+                <h2 class="font-semibold text-base">متطلبات تأشيرة الدخول</h2>
+                <a class="text-main" href="">اعرف اكتر</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="mt-10">
+        <div
+          class="max-width-wrapper bg-white py-5 flex justify-between items-start"
+        >
+          <div>
+            <a></a>
+            <a></a>
+            <a></a>
+          </div>
+          <div>
+            <div class="flex flex-col gap-2">
+              <h4>اشترك في نشرتنا الاخبارية</h4>
+              <div>
+                <input type="text" />
+                <button class="bg-main text-gray-50 p-1">انضم</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="max-width-wrapper">
+        <div class="grid grid-cols-10">
+          <div></div>
+          <div>
+            <h2>اكتشف السعودية</h2>
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
     </main>
   </body>
 </html>

@@ -199,7 +199,6 @@ window.addEventListener("load", () => {
   const swiper3 = new Swiper(".swiper3", {
     slidesPerView: 1.5,
     spaceBetween: 30,
-    centeredSlides: true,
     speed: 800,
     navigation: {
       nextEl: ".swiper-button-next2",
@@ -268,3 +267,10 @@ window.addEventListener("load", () => {
     });
   });
 });
+
+function initMap() {
+  const centerMap={lat: 23.8859, lng: 45.0792}
+  const map=new google.maps.Map(document.getElementById("google-map"), {
+    center:centerMap,zoom:10
+  })
+}
